@@ -17,6 +17,7 @@
 .productos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .productos img{
@@ -68,4 +69,106 @@
     left: 0;
     opacity: 90%;
     border-top-left-radius: 0.2cm;
+}
+
+.organizar-pedido_button{
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    z-index: 3000;
+    padding: 3mm;
+    border-top-left-radius: 0.5cm;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    transition: all .2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.display--none{
+    display: none;
+}
+
+.display--block{
+    display: block;
+}
+
+
+.organizar-pedido_button img{
+    width: 1cm;
+    margin: 0.5mm;
+    margin-right: 2mm;
+}
+
+.organizar-pedido_button:hover{
+    opacity: 90%;   
+    cursor: pointer;
+}
+
+.organizar-pedido{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 6cm;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3000;
+}
+
+.organizar-pedido_header{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 3mm;
+    border-top-left-radius: 0.2cm;
+}
+
+.organizar-pedido_header img{
+    width: 5.5mm;
+}
+
+.organizar-pedido_header p{
+    position: absolute;
+    right: 2mm;
+}
+
+.organizar-pedido_form_contenedor{
+    background-color: white;
+    padding: 3mm;
+}
+
+.organizar-pedido form input{
+    height: 6mm;
+    margin-top: 1mm;
+}
+
+.organizar-pedido form label{
+    opacity: 75%;
+}
+
+#enviar-pedido_button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1mm;
+    border-radius: 0.1cm;
+    font-weight: 800;
+    transition: all .1s;
+}
+
+#enviar-pedido_button:hover{
+    opacity: 90%; 
+    cursor: pointer;
+}
+
+#organizar-pedido_button-close{
+    transition: all .2s;
+}
+
+#organizar-pedido_button-close:hover{
+    opacity: 75%;
+    cursor: pointer;
 }
