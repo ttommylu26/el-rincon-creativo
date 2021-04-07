@@ -30,7 +30,13 @@
                     <input type="email" name="email" id="" required> <br> <br>
                     <label for="pedido">Ingrese el código de los productos a reservar, separados por punto y coma (AZ23; 23W4)</label> <br>
                     <input type="text" name="pedido" id="" required> <br> <br>
-                    <input type="submit" value="Enviar pedido" id="enviar-pedido_button">
+                    <label for="">Marque la siguiente casilla para seleccionar el envío a domicilio</label> <br>
+                    <input type="checkbox" name="envio" id="envio"> <br>
+                    <p id="envio-aviso">El envío a domicilio se efecúa a partir de los 4 días hábiles después del pedido</p>
+                    <br>
+                    <label for="fecha-de-envio/retiro">Seleccione la fecha de envío/retiro</label> <br>
+                    <input type="date" name="fecha-de-envio/retiro" id=""> <br> <br>
+                    <input type="submit" value="Enviar pedido" id="enviar-pedido_button"> <br> <br>
                 </form>
             </div>
         </div>
@@ -62,7 +68,7 @@
                 </header>
                 
                 <section class="section1">
-                    <h1>LOS PRODUCTOS MÁS BUSCADOS</h1>
+                    <h1>CATÁLOGO</h1>
                     <div class="contenedor_productos">
                         <p style="float: left;">Filtrar por:</p>
                         <input type="radio" name="filtro" id="todo" checked>

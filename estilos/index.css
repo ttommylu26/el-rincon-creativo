@@ -35,8 +35,7 @@
     margin: 3mm;
     padding: 2mm;
     padding-bottom: 3mm;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 0.2cm;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
@@ -112,7 +111,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    max-width: 6cm;
+    width: 7cm;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 3000;
 }
@@ -171,4 +170,12 @@
 #organizar-pedido_button-close:hover{
     opacity: 75%;
     cursor: pointer;
+}
+
+#envio-aviso{
+    display: none;
+}
+
+#envio:checked ~ #envio-aviso{
+    display: block;
 }
